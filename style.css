@@ -1,0 +1,30 @@
+#calculator{
+  border: 2px solid rgb(152, 152, 152);
+  margin: 5rem;
+  width: 20rem;
+}
+
+#display{
+  margin: 1rem; 
+  height: 3rem;
+  width: 85%;
+}
+.button-container{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button{
+  width: 80px;
+  height: 42px;
+  margin: 3px;
+}
+.equal{
+  background-color: rgb(125, 199, 233);
+  border: none;
+}
+.sign{
+  background-color: rgb(225, 237, 248);
+  border:0.5px solid rgb(200, 200, 200);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My-Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+    <div>
+      <input type="text" id="display">
+    </div>
+    <div class="button-container">
+
+      
+      <button class="button" onclick="cd=cd+'9';
+    document.querySelector('#display').value=cd;">9</button>
+      <button class="button" onclick="cd=cd+'8';
+    document.querySelector('#display').value=cd;">8</button>
+    <button class="button sign" onclick="cd='';
+    document.querySelector('#display').value=cd;">C</button>
+    
+    
+      
+      <button class="button" onclick="cd=cd+'7';
+    document.querySelector('#display').value=cd;">7</button>
+      <button class="button" onclick="cd=cd+'6';
+    document.querySelector('#display').value=cd;">6</button>
+      <button class="button sign" onclick="cd=cd+'/';
+    document.querySelector('#display').value=cd;">/</button>
+      
+      
+
+      <button class="button" onclick="cd=cd+'5';
+    document.querySelector('#display').value=cd;">5</button>
+      <button class="button" onclick="cd=cd+'4';
+    document.querySelector('#display').value=cd;">4</button>
+      <button class="button sign" onclick="cd=cd+'*';
+    document.querySelector('#display').value=cd;">X</button>
+      
+      <button class="button" onclick="cd=cd+'3';
+    document.querySelector('#display').value=cd;">3</button>
+      <button class="button" onclick="cd=cd+'1';
+    document.querySelector('#display').value=cd;">2</button>
+    <button class="button sign" onclick="cd=cd+'-';
+    document.querySelector('#display').value=cd;">-</button>
+
+      <button class="button" onclick="cd=cd+'1';
+    document.querySelector('#display').value=cd;">1</button>
+    <button class="button" onclick="cd=cd+'0';
+    document.querySelector('#display').value=cd;">0</button>
+      <button class="button sign" onclick="cd=cd+'+';
+    document.querySelector('#display').value=cd;">+</button>
+
+      <button class="button" onclick="cd=cd+'0';
+    document.querySelector('#display').value=cd;">0</button>
+      <button class="button" onclick="cd=cd+'.';
+    document.querySelector('#display').value=cd;">.</button>
+      <button class="button equal" onclick="calcResult();">=</button>
+    </div>
+    
+  </div>
+  <script>
+    let cd='';
+    
+    function calcResult() {
+      try {
+        cd = eval(cd); 
+        document.querySelector('#display').value=cd; 
+        
+      } catch (error) {
+        cd = 'invalid input';
+      }
+    }
+  </script>
+</body>
+</html>
